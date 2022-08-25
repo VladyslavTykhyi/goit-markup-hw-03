@@ -18,7 +18,21 @@
 
   /* Other */
 }
-/* General styles */
+/* Reset and General styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .page {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
@@ -32,6 +46,20 @@
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
 }
 .hidden-elements {
   position: absolute;
@@ -47,12 +75,41 @@
   overflow: hidden;
 }
 /* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .main-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-title-cl);
+
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.header-link {
+  margin-right: 93px;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-nav-link,
+.contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+.header-group {
+  display: flex;
+  align-items: center;
+}
+.menu-link:not(:last-child) {
+  margin-right: 50px;
 }
 .contact-link {
   font-weight: 500;
