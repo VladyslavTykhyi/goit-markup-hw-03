@@ -58,8 +58,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-  outline: 2px solid red;
 }
 .hidden-elements {
   position: absolute;
@@ -78,6 +76,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .main-nav {
   font-weight: 500;
@@ -99,7 +98,7 @@ img {
   gap: 50px;
 }
 .header-nav-link,
-.contact-link {
+.header-contact-link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -170,6 +169,9 @@ img {
   background-color: #188ce8;
 }
 /* Benefits */
+.benefits-list {
+  display: flex;
+}
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -177,9 +179,14 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-cl);
+  margin-bottom: 10px;
 }
 
 /* Work */
+.work-list {
+  display: flex;
+  justify-content: space-between;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -187,9 +194,14 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-cl);
+  margin-bottom: 50px;
 }
 
 /* Out team */
+.team-list {
+  display: flex;
+  gap: 30px;
+}
 .team {
   background-color: var(--light-bg-cl);
 }
@@ -197,14 +209,20 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-cl);
+
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: calc(19 / 16);
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
+  padding-bottom: 30px;
 }
 .team-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -213,6 +231,10 @@ img {
   background-color: var(--card-bg-cl);
 }
 /* Footer */
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer {
   background-color: var(--main-bg-cl);
 }
@@ -221,12 +243,30 @@ img {
 }
 .address {
   font-style: normal;
+  padding-top: 20px;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-map {
   color: var(--hero-txt-cl);
 }
 
 /* Portfolio page */
+.btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 50px;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-card {
+  border-bottom: 1px solid #eeeeee;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -244,6 +284,10 @@ img {
   line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  border: none;
+  padding: 6px 25px;
+
+  background-color: var(--light-bg-cl);
   color: var(--main-title-cl);
   cursor: pointer;
 }
